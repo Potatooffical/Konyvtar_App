@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" Margin="3px">
             <Label Content="Keresés cím alapján:"/>
-            <TextBox x:Name="tbx_cim" Width="200px"/>
+            <TextBox x:Name="tbx_cim" Width="200px" TextChanged="tbx_cim_TextChanged"/>
             <Label Content="Műfaj:"/>
             <ComboBox x:Name="cb_mufaj" Width="150px"/>
             
@@ -54,8 +54,8 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="5" Margin="25px 0px 0px 0px">
                 <Button x:Name="btn_hozzaadas" Content="Hozzáadás" Margin="3px" Click="btn_hozzaadas_Click"/>
-                <Button x:Name="btn_modositas" Content="Módositása" Margin="3px"/>
-                <Button x:Name="btn_torles" Content="Törlés" Margin="3px"/>
+                <Button x:Name="btn_modositas" Content="Módositása" Margin="3px" Click="btn_modositas_Click"/>
+                <Button x:Name="btn_torles" Content="Törlés" Margin="3px" Click="btn_torles_Click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="6" Margin="20px 0px 0px 0px">
                 <Button x:Name="btn_frissit" Content="Űrlap törlése és az adatok betöltése" Click="btn_frissit_Click"/>
